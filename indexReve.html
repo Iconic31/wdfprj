@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>PTT Software Co.,Ltd</title>
+
+        <!-- BS css1 js1 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" type="text/css">
+
+        <!-- fontawesome css1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <style type="text/css">
+
+            body{
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .bannars{
+                height: 100vh;
+
+                background: linear-gradient(
+                    20deg,
+                    steelblue 30%,
+                    skyblue 10%
+                );
+
+                background-size: 5%;
+
+                transition: all 2s;
+            }
+
+            .bannars:hover{
+                background-size: 5.5%;
+                background-position: center;
+            }
+
+            .card:hover{
+                box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+            }
+
+            .maps{
+                width: 100%;
+                height: 40vh;
+            }
+
+            .bgs{
+                background: linear-gradient(
+                    rgba(0,0,0,0),
+                    rgba(0,0,0,.2)
+                );
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- Start Header Section -->
+        <header>
+            <!-- start navbar -->
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+
+                <a href="indexReve.html" class="navbar-brand ms-5">
+                    <img src="https://icon-library.com/images/icon-logo-png/icon-logo-png-11.jpg" width="70px" alt="logo" />
+                    <span class="h4 ms-3">PTT Software Co.,Ltd</span>
+                </a>
+
+                <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+
+                <div id="mobileNav" class="navbar-collapse collapse justify-content-between mx-5">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="indexReve.html" class="nav-link text-uppercase fw-bold text-light">Home</a></li>
+                        <li class="nav-item"><a href="#client" class="nav-link text-uppercase fw-bold text-light">Client</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-uppercase fw-bold text-light">About</a></li>
+                        <li class="dropdown nav-item"><a href="#" class="dropdown-toggle nav-link text-uppercase fw-bold text-light" data-bs-toggle="dropdown">Software</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#software" class="dropdown-item">Android App</a></li>
+                                <li><a href="#software" class="dropdown-item">IOS App</a></li>
+                                <li><a href="#software" class="dropdown-item">Linux App</a></li>
+                                <li><a href="#software" class="dropdown-item">Window App</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#pricing" class="nav-link text-uppercase fw-bold text-light">Pricing</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-uppercase fw-bold text-light">Contact</a></li>
+                    </ul>
+    
+                    <div class="my-3">
+                        <button type="button" class="btn btn-outline-light">Sign Up</button>
+                    </div>
+
+                </div>
+
+               
+
+            </nav>
+            <!-- end navbar -->
+
+            <!-- start bannar -->
+            <div class="d-flex justify-content-center align-items-center bannars">
+                <div class="text-center">
+                    <span class="display-1 text-primary fw-bold me-3">PTT</span> <span class="display-2 text-light">Software development Company :</span>
+                    <p class="h3 fst-italic fw-light my-2 text-light">We help companies to digitalize their business.</p>
+                    <p class="text-muted lead">Properly set processes. Transparent cooperation. Predictable delivery.</p>
+                    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#modalBox">Get In Touch</button>
+                </div>
+            </div>
+            <!-- end bannar -->
+
+        </header>
+        <!-- End Header Section -->
+
+        <!-- Start Client Section  -->
+        <section id="client" class="bg-light p-3">
+            
+            <!-- start title -->
+            <div class="text-center mb-4">
+                <h1 class="display-3 text-warning">Our Client</h1>
+                <p class="text-muted lead">Projects we successfully developed, one look is worth a thounsand work</p>
+            </div>
+            <!-- end title -->
+
+            <!-- start card box -->
+            <div class="row text-center mx-5">
+
+                <div class="col-lg-3  col-md-4 col-sm-6 mb-5">
+                    <div class="card">
+                        <div class="card-body bg-info">
+                            <h4 class="card-title">Toyota</h4>
+                            <h6 class="card-subtitle mb-2 text-secondary">Vehicles</h6>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque vitae nihil voluptatum omnis possimus sunt, sint a repudiandae sed ullam aspernatur nam voluptatem beatae consequuntur placeat inventore autem totam eaque!</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Content</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3  col-md-4 col-sm-6 mb-5">
+                    <div class="card">
+                        <div class="card-body bg-info">
+                            <h4 class="card-title">Mazda</h4>
+                            <h6 class="card-subtitle mb-2 text-secondary">Vehicles</h6>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque vitae nihil voluptatum omnis possimus sunt, sint a repudiandae sed ullam aspernatur nam voluptatem beatae consequuntur placeat inventore autem totam eaque!</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Content</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3  col-md-4 col-sm-6 mb-5">
+                    <div class="card">
+                        <div class="card-body bg-info">
+                            <h4 class="card-title">Suzuki</h4>
+                            <h6 class="card-subtitle mb-2 text-secondary">Vehicles</h6>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque vitae nihil voluptatum omnis possimus sunt, sint a repudiandae sed ullam aspernatur nam voluptatem beatae consequuntur placeat inventore autem totam eaque!</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Content</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3  col-md-4 col-sm-6 mb-5">
+                    <div class="card">
+                        <div class="card-body bg-info">
+                            <h4 class="card-title">Kia</h4>
+                            <h6 class="card-subtitle mb-2 text-secondary">Vehicles</h6>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque vitae nihil voluptatum omnis possimus sunt, sint a repudiandae sed ullam aspernatur nam voluptatem beatae consequuntur placeat inventore autem totam eaque!</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Content</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3  col-md-4 col-sm-6 mb-5">
+                    <div class="card">
+                        <div class="card-body bg-warning">
+                            <h4 class="card-title">Samsaung</h4>
+                            <h6 class="card-subtitle mb-2 text-secondary">Communication Technology</h6>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque vitae nihil voluptatum omnis possimus sunt, sint a repudiandae sed ullam aspernatur nam voluptatem beatae consequuntur placeat inventore autem totam eaque!</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Content</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3  col-md-4 col-sm-6 mb-5">
+                    <div class="card">
+                        <div class="card-body bg-warning">
+                            <h4 class="card-title">Mi</h4>
+                            <h6 class="card-subtitle mb-2 text-secondary">Communication Technology</h6>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque vitae nihil voluptatum omnis possimus sunt, sint a repudiandae sed ullam aspernatur nam voluptatem beatae consequuntur placeat inventore autem totam eaque!</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Content</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3  col-md-4 col-sm-6 mb-5">
+                    <div class="card">
+                        <div class="card-body bg-warning">
+                            <h4 class="card-title">Apple</h4>
+                            <h6 class="card-subtitle mb-2 text-secondary">Communication Technology</h6>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque vitae nihil voluptatum omnis possimus sunt, sint a repudiandae sed ullam aspernatur nam voluptatem beatae consequuntur placeat inventore autem totam eaque!</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Content</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card">
+                        <div class="card-body bg-warning">
+                            <h4 class="card-title">Oppo</h4>
+                            <h6 class="card-subtitle mb-2 text-secondary">Communication Technology</h6>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque vitae nihil voluptatum omnis possimus sunt, sint a repudiandae sed ullam aspernatur nam voluptatem beatae consequuntur placeat inventore autem totam eaque!</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Content</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr/>
+
+            </div>
+            <!-- end card box -->
+
+        </section>
+        <!-- End Client Section -->
+
+        <!-- Start Software Section -->
+        <section id="software">
+
+            <!-- start title -->
+            <div class="text-center mb-4">
+                <h1 class="display-3 text-warning">Software</h1>
+                <p class="text-muted lead">Projects we successfully developed, one look is worth a thounsand work</p>
+            </div>
+            <!-- end title -->
+
+            <!-- start  box -->
+            <div class="container-fluid">
+                <div class="row text-center mx-3">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="https://st1.bgr.in/wp-content/uploads/2018/10/android-green-lego-poster-googleblog.jpg" class="img-thumbnail" alt="androidApp">
+                        <h3>Android Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit sunt voluptatum sint nemo harum eos aliquam excepturi cum enim! Mollitia fugiat velit dicta, non atque autem eos id totam.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="https://mytechmyanmar.com/wp-content/uploads/2020/04/appstore.jpg" class="img-thumbnail" alt="androidApp">
+                        <h3>IOS Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit sunt voluptatum sint nemo harum eos aliquam excepturi cum enim! Mollitia fugiat velit dicta, non atque autem eos id totam.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="https://i.ytimg.com/vi/8WbyB_2HthM/maxresdefault.jpg" class="img-thumbnail"  alt="linux">
+                        <h3>Linux Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit sunt voluptatum sint nemo harum eos aliquam excepturi cum enim! Mollitia fugiat velit dicta, non atque autem eos id totam.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="https://i.pcmag.com/imagery/lineups/06xskoAKsVIlA7WdtvUGQmT-1.1577756249.fit_lim.size_1182x667.jpg" class="img-thumbnail"  alt="window">
+                        <h3>Window Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit sunt voluptatum sint nemo harum eos aliquam excepturi cum enim! Mollitia fugiat velit dicta, non atque autem eos id totam.</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end  box -->
+
+        </section>
+        <!-- End Software Section -->
+
+        <!-- Start Team Section -->
+        <section id="about" class="bg-secondary ">
+
+            <p class="display-3 text-center text-warning pt-3">Team</p>
+
+            <div class="row mx-3 pb-5">
+
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/2021/01/Sam-CF.jpg" alt="user1">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Mr.Myint Thu</h3>
+                            <p class="card-subtitle text-muted lead">Founder & CEO</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="float-end">
+                                <a href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+								<a href="#"><i class="fab fa-twitter fa-2x text-info"></i></a>
+								<a href="#"><i class="fab fa-youtube fa-2x text-danger"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+						<img src="https://www.boemagazine.com/wp-content/uploads/2019/11/blur-businesswoman-caucasian-941555.jpg" alt="user2">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Mrs.Hana</h3>
+                            <p class="card-subtitle text-muted lead">Operation Manager</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="float-end">
+                                <a href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+								<a href="#"><i class="fab fa-twitter fa-2x text-info"></i></a>
+								<a href="#"><i class="fab fa-youtube fa-2x text-danger"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+						<img src="https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/2021/01/what-is-the-difference-web-developer-web-designer.jpg" alt="user3">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Mr.ikon</h3>
+                            <p class="card-subtitle text-muted lead">Project Manager</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="float-end">
+                                <a href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+								<a href="#"><i class="fab fa-twitter fa-2x text-info"></i></a>
+								<a href="#"><i class="fab fa-youtube fa-2x text-danger"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End Team Section -->
+
+        <!-- Start Public Interest Section -->
+        <section>
+
+            <div class="container-fluid">
+                  <!-- start title -->
+                <div class="text-center mb-4">
+                    <h1 class="display-3 text-warning">Public Interest</h1>
+                    <p class="text-muted lead">Projects we successfully developed, one look is worth a thounsand work</p>
+                </div>
+                <!-- end title -->
+
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-10 mx-auto">
+
+                        <div class="mb-3">
+                            <h3>Ebook</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" style="width:25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" >25%</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <h3>Android App</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-secondary" style="width:25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" >25%</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <h3>IOS Application</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" style="width:15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" >15%</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <h3>Linux Application</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" style="width:5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" >5%</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <h3>Window Application</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" style="width:30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" >30%</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                </div>
+
+        </section>
+        <!-- End Public Interest Section -->
+
+        <!-- Start Pricing Section -->
+        <section id="pricing" class="bg-secondary py-3">
+
+            <!-- start title -->
+            <div class="text-center mb-4">
+                <h1 class="display-3 text-warning">Pricing</h1>
+                <p class="text-light lead">Projects we successfully developed, one look is worth a thounsand work</p>
+            </div>
+            <!-- end title -->
+
+            <div class="container-fluid">
+
+                <div class="row text-center">
+
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="card">
+    
+                            <div class="card-body">
+    
+                                <h3>Blog Site / Free</h3>
+                                <p>$0 / month</p>
+                                <hr/>
+    
+                                <ul class="list-group">
+                                    <li class="list-group-item">Single User</li>
+                                    <li class="list-group-item">5GB Storage</li>
+                                    <li class="list-group-item">Unlimited Public Project</li>
+                                    <li class="list-group-item">Community Access</li>
+                                    <li class="list-group-item">Unlimited Private Project</li>
+                                    <li class="list-group-item">Dedicate Phone Support</li>
+                                    <li class="list-group-item">Free Subdomain</li>
+                                    <li class="list-group-item">Monthly Status Reports</li>
+                                </ul>
+                                
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-grid">
+                                    <button type="button" class="btn bg-warning">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="card">
+    
+                            <div class="card-body">
+    
+                                <h3>Ecommerce site/ Plus</h3>
+                                <p>$49 / month</p>
+                                <hr/>
+    
+                                <ul class="list-group">
+                                    <li class="list-group-item fw-bold">Unlimited User</li>
+                                    <li class="list-group-item">5GB Storage</li>
+                                    <li class="list-group-item">Unlimited Public Project</li>
+                                    <li class="list-group-item">Community Access</li>
+                                    <li class="list-group-item">Unlimited Private Project</li>
+                                    <li class="list-group-item">Dedicate Phone Support</li>
+                                    <li class="list-group-item">Free Subdomain</li>
+                                    <li class="list-group-item">Monthly Status Reports</li>
+                                </ul>
+                                
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-grid">
+                                    <button type="button" class="btn bg-warning">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="card">
+    
+                            <div class="card-body">
+    
+                                <h3>Blog Site / Free</h3>
+                                <p>$0 / month</p>
+                                <hr/>
+    
+                                <ul class="list-group">
+                                    <li class="list-group-item">Single User</li>
+                                    <li class="list-group-item">5GB Storage</li>
+                                    <li class="list-group-item">Unlimited Public Project</li>
+                                    <li class="list-group-item">Community Access</li>
+                                    <li class="list-group-item">Unlimited Private Project</li>
+                                    <li class="list-group-item">Dedicate Phone Support</li>
+                                    <li class="list-group-item">Free Subdomain</li>
+                                    <li class="list-group-item">Monthly Status Reports</li>
+                                </ul>
+                                
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-grid">
+                                    <button type="button" class="btn bg-warning">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+               </div>
+
+            </div>
+
+        </section>
+        <!-- End Pricing Section -->
+
+        <!-- Start Contact Section -->
+        <section id="contact">
+
+           <div class="container-fluid">
+
+            <!-- start title -->
+            <div class="text-center mb-4">
+                <h1 class="display-3 text-warning">Contact Us</h1>
+                <p class="text-muted lead">Projects we successfully developed, one look is worth a thounsand work</p>
+            </div>
+            <!-- end title -->
+
+            <div class="row pb-4 mb-5">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h3>Office Location</h3>
+                        </div>
+                        <div class="card-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.287056697717!2d96.07567581426287!3d22.00030945927835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6cceed1ac805%3A0x204e779bad4e2d68!2z4oCL4YCb4YC94YC-4YCx4YCU4YC-4YCE4YC64YC44YCG4YCu4YCT4YCZ4YC54YCZ4YCs4YCb4YCv4YC2!5e0!3m2!1sen!2smm!4v1655453453922!5m2!1sen!2smm" class="maps" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="card-footer">
+                            <p>Phone : 09 842005100</p>
+                            <p>Email : ikon@gmail.com</p>
+                            <p>Address : No.69 , 26st,Mandalay,Myanmar</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mt-3">
+                   
+                    <div class="text-center">
+                        <h3>Got Questions?</h3>
+                        <p>Stay Connected</p>
+                    </div>
+
+                    <form action="" method="">
+
+                        <div class="form-group mb-3">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="msg">Message</label>
+                            <textarea name="msg" id="msg" class="form-control"  rows="3" placeholder="Enter Your Message"></textarea>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-warning">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+
+           </div>
+
+        </section>
+        <!-- End Contact Section -->
+
+        <!-- Start Footer Section -->
+        <footer class="text-center p-1 fixed-bottom bgs">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+			<div class="elfsight-app-fda21b01-e75f-42db-92fd-6ef7d6ca3a8b"></div>
+
+            <p>&copy Copyright <span></span> - Made by DLT Co.,Ltd</p>
+
+        </footer>
+        <!-- End Footer Section -->
+
+        <!-- Start Modal Box -->
+        <div id="modalBox" class="modal fade">
+
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="h4">Login here</span>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+        
+                        <div class="form-group mb-3">
+                            <label for="loginMail">Email</label>
+                            <input type="email" name="loginMail" id="loginMail" class="form-control form-control-sm rounded-0" placeholder="Enter Your Email" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="loginPw">Password</label>
+                            <input type="password" name="loginPw" id="loginPw" class="form-control form-control-sm rounded-0" placeholder="Enter Your Password" />
+                        </div>
+        
+                        <div class="float-end">
+                            <a href="#" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</a>
+                            <a href="#" class="btn btn-primary">Login</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span>No Register! <a href="#">Sign Up Here</a></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End Modal Box -->
+
+        <!-- BS css1 js1 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>
